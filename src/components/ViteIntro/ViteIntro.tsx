@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './ViteIntro.css'
 
 function ViteIntro() {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)  // sto count αποθηκεύεται η αρχική τιμή που έχει δηλωθεί στο useState kai to setCount ρυθμίζει την τιμή
 
     return (
         <>
@@ -18,8 +18,8 @@ function ViteIntro() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
+                <button onClick={() => setCount((count) => count + 1)}>         // όταν καλέσουμε την onClick θα έρθει η setCount και θα βρει την αρχική τιμή του
+                    count is {count}                                                                   // count θα την κάνει +1 και θα την αποθηκεύσει στο count.
                 </button>
                 <p>
                     Edit <code>src/App.tsx</code> and save to test HMR
