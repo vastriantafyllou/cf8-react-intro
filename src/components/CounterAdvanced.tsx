@@ -58,7 +58,7 @@ const CounterAdvanced = () => {
           onClick={decreaseCount}
           label="Decrease"
           disabled={state.count === 0}
-          addClasses="bg-cf-dark-gray disabled:bg-cf-grey"
+          addClasses="bg-cf-dark-gray disabled:bg-cf-gray"
 
         />
         <CounterButton
@@ -68,7 +68,7 @@ const CounterAdvanced = () => {
           addClasses="bg-cf-dark-gray disabled:bg-red-500"
         />
       </div>
-      <p className="text-center text-cf-grey pt-8">
+      <p className="text-center text-cf-gray pt-8">
         Last Change: <strong>{state.lastAction || "-"}</strong> at <strong>{state.time || "-"}</strong>
       </p>
     </>
