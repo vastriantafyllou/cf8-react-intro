@@ -6,41 +6,73 @@
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import Card from "./components/Card.tsx";
 
-import Layout from "./components/Layout.tsx";
+// import Layout from "./components/Layout.tsx";
+// import CounterAdvanced from "./components/CounterAdvanced.tsx";
+// import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+// import CounterAdvanced from "./components/CounterAdvanced.tsx";
+// import {useEffect} from "react";
+// import {ArrowFunctionalComponentWithProps} from "./components/ArrowFunctionalComponentWithProps.tsx";
+// import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
+// import NameChanger from "./components/NameChanger.tsx";
+// import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+// import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
+// import Counter from "./components/Counter.tsx";
+// import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
+// import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
+// import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
+// import Card from "./components/Card.tsx";
+// import ClassComponent from "./components/ClassComponent.tsx";
+// import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
+// import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWithProps.tsx";
+// import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
+// import FunctionalComponent from "./components/FunctionalComponent.tsx";
+// import ViteIntro from "./components/ViteIntro/ViteIntro.tsx";
+// import NameChanger from "./components/NameChanger.tsx";
+// import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
-import Counter from "./components/Counter.tsx";
+// import Counter from "./components/Counter.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 
+import Layout from "./components/Layout.tsx";
+import CounterAdvanced from "./components/CounterAdvanced.tsx";
+// import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
+// import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
+// import Counter from "./components/Counter.tsx";
+// import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
+
 function App() {
+
     return (
     <>
       {/*<ViteIntro />*/}
       {/*<ClassComponent/>*/}
       {/*<FunctionalComponent/>*/}
-      {/*<ArrowFunctionalComponent/>*/}
-      {/*<ArrowFunctionalComponentWithProps title="Is an Arrow Functional Component with Props" />*/}
+      {/*<ArrowFunctionalComponentWithProps/>*/}
       {/*<ArrowFunctionalComponentWithProps title="2nd Title" />*/}
       {/*<ArrowFunctionalComponentWithPropsType*/}
       {/*  title="Is an Arrow Functional Component with 2 Props"*/}
       {/*  description="lorem ipsum dolor sit amet" */}
       {/*/>*/}
 
-    {/*<Card title="Card">*/}
     {/*  <ArrowFunctionalComponentWithPropsType*/}
     {/*    title="Is an Arrow Functional Component with 2 Props"*/}
     {/*    description="lorem ipsum dolor sit amet"*/}
     {/*  />*/}
-    {/*</Card>*/}
       <Layout>
+        {/*<Card title="Card Component">*/}
+        {/*<ArrowFunctionalComponent/>*/}
         {/*<ArrowFunctionalComponentWithPropsType*/}
         {/*  title="Is an Arrow Functional Component with 2 Props"*/}
         {/*  description="lorem ipsum dolor sit amet"*/}
         {/*/>*/}
         {/*<FunctionalComponentWithState/>*/}
         {/*<ClassComponentWithState/>*/}
-        <Counter/>
-
+        {/*<Counter/>*/}
+        {/*<NameChanger/>*/}
+        {/*<CounterWithMoreStates/>*/}
+        <CounterAdvanced/>
+        {/*</Card>*/}
       </Layout>
     </>
   )
