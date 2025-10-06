@@ -44,20 +44,25 @@
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
 import Layout from "./components/Layout.tsx";
+// import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
+import Timer from "./components/Timer.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
-import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import {useEffect} from "react";
 
 function App() {
-//
-//   useEffect(setup, []);
-//
-//   useEffect(() => {
-//     // setup function
-//     return () => {
-//     //  cleanup
-//     }
-//   }, []);
+
+  // useEffect(() => {
+  //   const id = setInterval(() => console.log(id), 1000);
+  //   return () => clearInterval(id);
+  // },[]);
+
+  // useEffect(() => {
+  //   let counter: number = 1;
+  //   const id: number = setInterval(() => {
+  //     console.log(counter++);
+  //   }, 1000);
+  //   return () => clearInterval(id);
+  // }, [])
 
     return (
     <>
@@ -90,7 +95,8 @@ function App() {
         {/*<CounterAdvanced/>*/}
         {/*</Card>*/}
         {/*<CounterWithCustomHook/>*/}
-        <NameChangerWithEffect/>
+        {/*<NameChangerWithEffect/>*/}
+        <Timer/>
       </Layout>
     </>
   )
