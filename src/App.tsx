@@ -44,7 +44,8 @@
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
 import Layout from "./components/Layout.tsx";
-import WindowSize from "./components/WindowSize.tsx";
+// import WindowSize from "./components/WindowSize.tsx";
+import FocusInput from "./components/FocusInput.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import Timer from "./components/Timer.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
@@ -98,7 +99,8 @@ function App() {
         {/*<CounterWithCustomHook/>*/}
         {/*<NameChangerWithEffect/>*/}
         {/*<Timer/>*/}
-        <WindowSize/>
+        {/*<WindowSize/>*/}
+        <FocusInput/>
       </Layout>
     </>
   )
