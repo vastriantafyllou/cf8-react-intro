@@ -1,4 +1,4 @@
-// import ViteIntro from "./components/ViteIntro/ViteIntro.tsx";             // ./ σημαίνει ότι είομαστε στο src, και του λέμε να μας φέρει το ViteIntro
+// import ViteIntro from "./components/ViteIntro/ViteIntro.tsx";             // ./ σημαίνει ότι είμαστε στο src, και του λέμε να μας φέρει το ViteIntro
 // import ClassComponent from "./components/ClassComponent.tsx";
 // import FunctionalComponent from "./components/FunctionalComponent.tsx";
 // import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
@@ -34,12 +34,17 @@
 // import Counter from "./components/Counter.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 
-import Layout from "./components/Layout.tsx";
-import CounterAdvanced from "./components/CounterAdvanced.tsx";
+// import Layout from "./components/Layout.tsx";
+// import CounterAdvanced from "./components/CounterAdvanced.tsx";
+// import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
+// import NameChanger from "./components/NameChanger.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
 // import Counter from "./components/Counter.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
+
+import Layout from "./components/Layout.tsx";
+import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 
 function App() {
 
@@ -71,8 +76,9 @@ function App() {
         {/*<Counter/>*/}
         {/*<NameChanger/>*/}
         {/*<CounterWithMoreStates/>*/}
-        <CounterAdvanced/>
+        {/*<CounterAdvanced/>*/}
         {/*</Card>*/}
+        <CounterWithCustomHook/>
       </Layout>
     </>
   )
