@@ -44,8 +44,9 @@
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
 import Layout from "./components/Layout.tsx";
+import WindowSize from "./components/WindowSize.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
-import Timer from "./components/Timer.tsx";
+// import Timer from "./components/Timer.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import {useEffect} from "react";
 
@@ -96,7 +97,8 @@ function App() {
         {/*</Card>*/}
         {/*<CounterWithCustomHook/>*/}
         {/*<NameChangerWithEffect/>*/}
-        <Timer/>
+        {/*<Timer/>*/}
+        <WindowSize/>
       </Layout>
     </>
   )
