@@ -46,6 +46,7 @@
 import Layout from "./components/Layout.tsx";
 // import WindowSize from "./components/WindowSize.tsx";
 import FocusInput from "./components/FocusInput.tsx";
+import CounterWithRef from "./components/CounterWithRef.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import Timer from "./components/Timer.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
@@ -101,6 +102,7 @@ function App() {
         {/*<Timer/>*/}
         {/*<WindowSize/>*/}
         <FocusInput/>
+        <CounterWithRef/>
       </Layout>
     </>
   )
