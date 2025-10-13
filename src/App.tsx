@@ -43,15 +43,21 @@
 // import Counter from "./components/Counter.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 
-import Layout from "./components/Layout.tsx";
+// import Layout from "./components/Layout.tsx";
 // import WindowSize from "./components/WindowSize.tsx";
 // import FocusInput from "./components/FocusInput.tsx";
 // import CounterWithRef from "./components/CounterWithRef.tsx";
-import PreviousValue from "./components/PreviousValue.tsx";
+// import {useEffect} from "react";
+// import PreviousValue from "./components/PreviousValue.tsx";
 // import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import Timer from "./components/Timer.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import {useEffect} from "react";
+
+import {BrowserRouter, Route, Routes} from "react-router";
+import NameChanger from "./components/NameChanger.tsx";
+import Timer from "./components/Timer.tsx";
+import HomePage from "./Pages/HomePage.tsx";
 
 function App() {
 
@@ -67,6 +73,15 @@ function App() {
   //   }, 1000);
   //   return () => clearInterval(id);
   // }, [])
+
+  // useEffect(() => {
+  //   history.pushState({page: 1}, "", "/page");
+  //   history.replaceState({page: 1}, "", "/page1");
+  //
+  //   window.onpopstate = (e) => {
+  //     console.log(e.state);
+  //   }
+  // })
 
     return (
     <>
@@ -84,7 +99,7 @@ function App() {
     {/*    title="Is an Arrow Functional Component with 2 Props"*/}
     {/*    description="lorem ipsum dolor sit amet"*/}
     {/*  />*/}
-      <Layout>
+    {/*  <Layout>*/}
         {/*<Card title="Card Component">*/}
         {/*<ArrowFunctionalComponent/>*/}
         {/*<ArrowFunctionalComponentWithPropsType*/}
@@ -104,8 +119,15 @@ function App() {
         {/*<WindowSize/>*/}
         {/*<FocusInput/>*/}
         {/*<CounterWithRef/>*/}
-        <PreviousValue/>
-      </Layout>
+        {/*<PreviousValue/>*/}
+      {/*</Layout>*/}
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomePage /> } />
+          <Route path="name-changer" element={<NameChanger />} />
+          <Route path="timer" element={<Timer />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
