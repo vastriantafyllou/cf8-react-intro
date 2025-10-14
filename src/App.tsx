@@ -60,6 +60,8 @@ import HomePage from "./Pages/HomePage.tsx";
 import NameChanger from "./components/NameChanger.tsx";
 import Timer from "./components/Timer.tsx";
 import UserPage from "./Pages/UserPage.tsx";
+import ControlledInput from "./components/ControlledInput.tsx";
+import UncontrolledInput from "./components/UncontrolledInput.tsx";
 // import NameChanger from "./components/NameChanger.tsx";
 // import Timer from "./components/Timer.tsx";
 // import HomePage from "./Pages/HomePage.tsx";
@@ -139,6 +141,8 @@ function App() {
             <Route path="examples?">
               <Route path="name-changer" element={<NameChanger/>}/>
               <Route path="timer" element={<Timer/>}/>
+              <Route path="controlled-input" element={<ControlledInput/>}/>
+              <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
               {/*<Route path="*" element={<ExamplePage/>}/>*/}
             </Route>
 
