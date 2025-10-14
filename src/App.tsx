@@ -55,9 +55,13 @@
 // import {useEffect} from "react";
 
 import {BrowserRouter, Route, Routes} from "react-router";
+import RouterLayout from "./components/RouterLayout.tsx";
+import HomePage from "./Pages/HomePage.tsx";
 import NameChanger from "./components/NameChanger.tsx";
 import Timer from "./components/Timer.tsx";
-import HomePage from "./Pages/HomePage.tsx";
+// import NameChanger from "./components/NameChanger.tsx";
+// import Timer from "./components/Timer.tsx";
+// import HomePage from "./Pages/HomePage.tsx";
 
 function App() {
 
@@ -123,9 +127,30 @@ function App() {
       {/*</Layout>*/}
       <BrowserRouter>
         <Routes>
-          <Route index element={<HomePage /> } />
-          <Route path="name-changer" element={<NameChanger />} />
-          <Route path="timer" element={<Timer />} />
+
+          <Route element={<RouterLayout/>}>
+
+            <Route index element={<HomePage />} />
+
+            {/*<Route path="examples/name-changer" element={<NameChanger />} />*/}
+            {/*<Route path="examples/timer" element={<Timer />} />*/}
+
+            <Route path="examples?">
+              <Route path="name-changer" element={<NameChanger/>}/>
+              <Route path="timer" element={<Timer/>}/>
+              {/*<Route path="*" element={<ExamplePage/>}/>*/}
+            </Route>
+
+          </Route>
+
+          {/*<Route path="users/:userId" element={<UserPage />} />*/}
+          {/*<Route path="users/:userId/accounts" element={<UserAccountPage />} />*/}
+
+
+          {/*<Route path="files/*" element={<FilePage />} />*/}
+
+          {/*<Route path="*" element={<PageNotFound />}/>*/}
+
         </Routes>
       </BrowserRouter>
     </>
