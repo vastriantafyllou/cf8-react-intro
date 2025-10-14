@@ -59,6 +59,7 @@ import RouterLayout from "./components/RouterLayout.tsx";
 import HomePage from "./Pages/HomePage.tsx";
 import NameChanger from "./components/NameChanger.tsx";
 import Timer from "./components/Timer.tsx";
+import UserPage from "./Pages/UserPage.tsx";
 // import NameChanger from "./components/NameChanger.tsx";
 // import Timer from "./components/Timer.tsx";
 // import HomePage from "./Pages/HomePage.tsx";
@@ -146,7 +147,12 @@ function App() {
           {/*<Route path="users/:userId" element={<UserPage />} />*/}
           {/*<Route path="users/:userId/accounts" element={<UserAccountPage />} />*/}
 
-
+          <Route path="users">
+            <Route path=":userId">
+              <Route index element={<UserPage/>}/>
+              {/*<Route path="accounts" element={<UserAccountPage/>}/>*/}
+            </Route>
+          </Route>
           {/*<Route path="files/*" element={<FilePage />} />*/}
 
           {/*<Route path="*" element={<PageNotFound />}/>*/}
