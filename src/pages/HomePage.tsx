@@ -8,6 +8,7 @@ const HomePage = () => {
     {path: "/timer", label: "Timer Example"},
     {path: "/examples/controlled-input", label: "Controlled Input"},
     {path: "/examples/uncontrolled-input", label: "Uncontrolled Input"},
+    {path: "/examples/multifield-form", label: "Multifield Form Example"},
   ];
 
   useEffect(() => {

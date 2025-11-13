@@ -56,15 +56,20 @@
 
 import {BrowserRouter, Route, Routes} from "react-router";
 import RouterLayout from "./components/RouterLayout.tsx";
-import HomePage from "./Pages/HomePage.tsx";
+import HomePage from "./pages/HomePage";
 import NameChanger from "./components/NameChanger.tsx";
 import Timer from "./components/Timer.tsx";
-import UserPage from "./Pages/UserPage.tsx";
+import UserPage from "./pages/UserPage.tsx";
 import ControlledInput from "./components/ControlledInput.tsx";
 import UncontrolledInput from "./components/UncontrolledInput.tsx";
+import MultifieldForm from "./components/MultifieldForm.tsx";
+import MultifieldFormWithValidation from "./components/MultifieldFormWithValidation.tsx";
+import MultifieldFormWithZod from "./components/MultifieldFormWithZod.tsx";
+import MultifieldFormWithHookForm from "./components/MultifieldFormWithHookForm.tsx";
+
 // import NameChanger from "./components/NameChanger.tsx";
 // import Timer from "./components/Timer.tsx";
-// import HomePage from "./Pages/HomePage.tsx";
+// import HomePage from "./pages/HomePage.tsx";
 
 function App() {
 
@@ -143,6 +148,11 @@ function App() {
               <Route path="timer" element={<Timer/>}/>
               <Route path="controlled-input" element={<ControlledInput/>}/>
               <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
+              <Route path="multifield-form" element={<MultifieldForm/>}/>
+              <Route path="multifield-form-validation" element={<MultifieldFormWithValidation/>}/>
+              <Route path="multifield-form-zod" element={<MultifieldFormWithZod/>}/>
+              <Route path="multifield-form-hook" element={<MultifieldFormWithHookForm/>}/>
+
               {/*<Route path="*" element={<ExamplePage/>}/>*/}
             </Route>
 
